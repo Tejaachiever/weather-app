@@ -70,7 +70,28 @@ function fetchData1(city) {
     
 }
 
-//======================================
+
+
+
+
+
+const btn = document.getElementById("btn");
+const city_name= document.getElementById("city_name")
+
+btn.addEventListener("click",(e)=>{
+
+fetchData1(city_name.value)
+e.preventDefault();
+
+})
+
+fetchData1("delhi");
+
+
+//================================
+
+
+//======================================watch list=================
 
 function fetchData2(city,wind,temp,humid){
 
@@ -102,18 +123,6 @@ function fetchData2(city,wind,temp,humid){
 
 //=============================================
 
-const btn = document.getElementById("btn");
-const city_name= document.getElementById("city_name")
-
-btn.addEventListener("click",(e)=>{
-
-fetchData1(city_name.value)
-e.preventDefault();
-
-})
-
-fetchData1("delhi");
-//================================
 
 
 
